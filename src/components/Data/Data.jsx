@@ -1,5 +1,5 @@
 import styles from './Data.module.css'
-import boryaPhoto from '../../assets/image.jpg.jpg'
+import boryaPhoto from '../../assets/boryaSmall.jpg'
 import alinaPhoto from '../../assets/alina.jpg'
 
 import React, { forwardRef, useRef, useEffect } from 'react'
