@@ -1,0 +1,231 @@
+.containerData {
+  width: 100%;
+ min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  background-color: #fff5ef;
+  box-shadow: 0 0 6px black;
+}
+
+/* Заголовок */
+.tittle {
+  color:#080725;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  margin-bottom: 10px;
+letter-spacing: 4px;
+  
+ 
+  padding: 15px;
+  
+}
+
+/* Контейнер фото */
+.containerFoto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+  margin: 20px auto;
+  
+}
+
+/* Колонка */
+.photoColumn {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  
+}
+
+/* Цитаты */
+.quoteTop,
+.quoteBottom {
+  font-family: "Great Vibes", cursive;
+  font-size: 21px;
+  color: #7a1f2b;
+  text-align: center;
+  
+  
+}
+
+/* Фото-рамка */
+.photoWrapper {
+  width: 100%;
+  aspect-ratio: 3 / 3.5;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 10px black;
+ 
+  
+}
+
+/* Фото */
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+  transition: transform 0.6s ease;
+}
+
+.photoWrapper:hover .photo {
+  transform: scale(1.03);
+}
+.placeholder {
+  height: 51px; /* примерно как высота текста */
+}
+
+.avgust{ 
+  color: #080725;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 14px;
+  width: 100%;
+  max-width: 420px;
+  margin: 30px auto 0;
+}
+
+.day {
+  position: relative;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #2b2b2b;
+  
+}
+.dayShwet{ 
+   position: relative;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #2b2b2b;
+  box-shadow:  0 0 6px black;
+  border-radius: 10px;
+
+}
+.heart {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  width: 12px;
+  height: 12px;
+  background-color: #7a1f2b;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #7a1f2b;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -6px;
+  left: 0;
+}
+
+.heart::after {
+  left: 6px;
+  top: 0;
+}
+
+.weekday {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #6b5b53;
+}
+
+.date {
+  display: block;
+  font-size: 22px;
+  margin-top: 6px;
+}
+
+.active .date {
+  color: #7a1f2b;
+  font-weight: 700;
+}
+
+.heart {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #7a1f2b;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translateX(-50%) rotate(-45deg) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) rotate(-45deg) scale(1.15);
+  }
+}
+@media (max-width: 480px) {
+  .tittle {
+    font-size: 26px;
+    letter-spacing: 2px;      /* чуть меньше */
+    padding: 10px;         /* меньше отступы сверху/снизу */
+    margin-bottom: 8px;
+  }
+
+  .quoteTop,
+  .quoteBottom {
+    font-size: 16px;       /* чуть меньше, чтобы не налезало на фото */
+    margin-bottom: 4px;    /* отступ от фото */
+  }
+
+  .containerFoto {
+    max-width: 300px;      /* подгоняем ширину фото-контейнера */
+    gap: 12px;             /* меньше расстояние между колонками */
+  }
+
+  .photoWrapper {
+    aspect-ratio: 3 / 3.5; /* можно оставить */
+    border-radius: 25px;   /* чуть меньше скругление */
+  }
+
+  .avgust {
+    font-size: 22px;       /* заголовок месяца чуть меньше */
+  }
+
+  .calendar {
+    max-width: 320px;      /* подгоняем календарь */
+    gap: 10px;
+  }
+
+  .date {
+    font-size: 18px;       /* цифры даты чуть меньше */
+  }
+
+  .weekday {
+    font-size: 10px;       /* дни недели поменьше */
+  }
+}

@@ -1,0 +1,148 @@
+.containerDress {
+  width: 100%;
+  min-height: auto; /* под контент, чтобы не было лишнего скролла */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 20px 10px;
+  background-color: #fff5ef;
+  border-top: 2px solid black;
+}
+
+.containerText {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.text {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.sectionTitle {
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #7a1f2b;
+  margin: 10px 0 5px;
+  text-align: center;
+}
+
+.containerMan, .containerWoman {
+  width: 80%; /* компактно */
+  max-width: 300px; /* ограничение на большие экраны */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.containerMan img, .containerWoman img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Текст под фото */
+.textUnderPhotos {
+ font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  color: #2b2b2b;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.timer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.timerTitle {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+ color:  #7a1f2b;
+}
+
+.timerNumbers span {
+  font-size: 15px;
+  margin: 0 8px;
+  font-weight: 600;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+
+@media (max-width: 480px) {
+  .containerDress {
+    padding: 15px 10px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
+    margin: 8px 0 4px;
+  }
+
+  .containerMan,
+  .containerWoman {
+    width: 95%;
+    max-width: 260px;
+    margin-bottom: 8px;
+  }
+
+  .containerMan img,
+  .containerWoman img {
+    border-radius: 12px;
+  }
+
+  .textUnderPhotos {
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 0 12px;
+    margin-top: 12px;
+  }
+
+  .timer {
+    margin-top: 18px;
+  }
+
+  .timerTitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .timerNumbers {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+
+  .timerNumbers span {
+    font-size: 14px;
+    padding: 4px 8px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    min-width: 50px;
+  }
+}

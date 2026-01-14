@@ -1,0 +1,138 @@
+.containerPlace { 
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #fff5ef;
+}
+.containerText{ 
+display: flex;
+flex-direction: column;
+margin-top: 50px;
+gap: 35px;
+}
+.tittle{ 
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+}
+.textCenter{ 
+    font-family: "Great Vibes", cursive;
+ font-weight: 400;
+font-style: normal; 
+font-size: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 3px;
+}
+.textBottom {
+  display: flex;
+  flex-direction: column;   /* чтобы строки располагались сверху вниз */
+  align-items: center;      /* центрируем по горизонтали */
+  justify-content: center;  /* центрируем по вертикали внутри блока */
+  text-align: center;       /* на всякий случай для текста */
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+ font-size: 20px;
+ opacity: 0.9;
+  color: #7a1f2b;
+  line-height: 1.4;         /* чтобы строки не слипались */
+}
+.containerFoto {
+  width: 90%;        /* почти вся ширина */
+  max-width: 1200px; /* ограничение для больших экранов */
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerFoto img {
+width: 100%;
+  max-width: 1000px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.containerBtn {
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  background-color:transparent;
+  border: 2px solid #7a1f2b;
+  color: #7a1f2b; /* бордовый фон */
+   display: flex;             /* делаем ссылку блочной с флексом */
+  align-items: center;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+  font-weight: 600;
+text-decoration: none; 
+  border-radius: 10px;      /* скругление */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: white;
+  background-color: #a22c3a; /* чуть светлее при наведении */
+  transform: translateY(-2px); /* легкое "подпрыгивание" */
+}
+@media (max-width: 480px) {
+  .containerPlace {
+    padding: 20px 10px; /* немного внутреннего отступа */
+    /* убираем height, чтобы блок растягивался под контент */
+    height: auto;
+  }
+
+  .containerText {
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center; /* центрируем текст */
+    text-align: center;
+  }
+
+  .tittle {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .textCenter {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .textBottom {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 10px; /* небольшой отступ по бокам */
+  }
+
+  .containerFoto {
+    width: 95%;
+    margin-top: 15px;
+  }
+
+  .containerFoto img {
+    width: 100%;
+    max-height: 30vh; /* меньше на телефоне */
+    border-radius: 15px;
+  }
+  .containerBtn {
+  margin-top: 40px;
+  width: 200px;
+  height: 40px;
+}
+
+}
