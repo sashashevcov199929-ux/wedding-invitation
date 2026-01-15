@@ -18,13 +18,13 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 35px;
+  font-size: 30px;
 }
 .textCenter {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
+  font-size: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +38,7 @@
   text-align: center; /* на всякий случай для текста */
   font-family: "Merriweather", serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 17px;
   opacity: 0.9;
   color: #7a1f2b;
   line-height: 1.4; /* чтобы строки не слипались */
@@ -46,7 +46,7 @@
 .containerFoto {
   width: 90%; /* почти вся ширина */
   max-width: 1200px; /* ограничение для больших экранов */
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@
 .containerFoto img {
   width: 100%;
   max-width: 1000px;
-  height: 360px;
+  height: 340px;
   object-fit: cover;
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
