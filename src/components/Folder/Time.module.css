@@ -6,14 +6,11 @@
   align-items: center;
   position: relative;
   background-color: #fff5ef;
-  
-  
-  
 }
 
 .top {
   width: 100%;
-  height: 95%;
+  height: 100%;
   background-color: #080725;
   position: relative;
   overflow: hidden;
@@ -21,22 +18,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* верх блока */
-  padding-top: 20px;            /* отступ сверху для заголовка */
+  padding-top: 20px; /* отступ сверху для заголовка */
   gap: 20px;
   padding-top: 50px;
 }
 
+.tochk {
+  color: white;
+  font-size: 30px;
 
-.tochk{ 
-    color: white;
-    font-size:30px;
-    
-    width: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .tittle {
   color: white;
@@ -47,111 +42,109 @@
   letter-spacing: 4px;
   margin-bottom: 70px;
 }
-.start{ 
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    gap: 30px;
-   
-    width: 450px;
+.start {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  gap: 30px;
+
+  width: 450px;
 }
-.time{ 
-    font-family: "Merriweather", serif;
+.time {
+  font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-.text{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 300px;
-    font-family: "Merriweather", serif;
+  width: 300px;
+  font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   font-size: 22px;
 }
-.containerBokal
-{
-position: absolute;   /* чтобы позиционировать относительно родителя */
-  bottom: 10%;             /* сдвиг вниз от верхнего края блока */
-  right: 20%;            /* центр по горизонтали */
+.containerBokal {
+  position: absolute; /* чтобы позиционировать относительно родителя */
+  bottom: 10%; /* сдвиг вниз от верхнего края блока */
+  right: 20%; /* центр по горизонтали */
   transform: translateX(-50%); /* центрирование */
-  width: 150px;         /* размер картинки */
+  width: 150px; /* размер картинки */
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.containerBokal img{
-    width: 100%;
+.containerBokal img {
+  width: 100%;
   height: auto;
-  object-fit: contain; 
+  object-fit: contain;
 }
 .containerRings {
-  position: absolute;   /* чтобы позиционировать относительно родителя */
-  top: 10%;             /* сдвиг вниз от верхнего края блока */
-  left: 30%;            /* центр по горизонтали */
+  position: absolute; /* чтобы позиционировать относительно родителя */
+  top: 10%; /* сдвиг вниз от верхнего края блока */
+  left: 30%; /* центр по горизонтали */
   transform: translateX(-50%); /* центрирование */
-  width: 150px;         /* размер картинки */
+  width: 150px; /* размер картинки */
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .containerRings img {
   width: 100%;
   height: auto;
-  object-fit: contain;     /* сохраняем пропорции */
+  object-fit: contain; /* сохраняем пропорции */
 }
-.containerHeart{
-position: absolute;   /* чтобы позиционировать относительно родителя */
-  top: 10%;             /* сдвиг вниз от верхнего края блока */
-  right: 20%;            /* центр по горизонтали */
+.containerHeart {
+  position: absolute; /* чтобы позиционировать относительно родителя */
+  top: 10%; /* сдвиг вниз от верхнего края блока */
+  right: 20%; /* центр по горизонтали */
   transform: translateX(-50%); /* центрирование */
-  width: 150px;         /* размер картинки */
+  width: 150px; /* размер картинки */
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-50%) rotate(15deg); 
+  transform: translateX(-50%) rotate(15deg);
 }
 
-.containerHeart img{
- width: 100%;
+.containerHeart img {
+  width: 100%;
   height: auto;
-  object-fit: contain; 
+  object-fit: contain;
 }
 .wave {
   position: absolute;
-  bottom: 0;     /* прижимаем к низу блока */
+  bottom: 0; /* прижимаем к низу блока */
   left: 0;
   width: 100%;
-  height: 60px;  /* высота волны */
+  height: 60px; /* высота волны */
   display: block;
 }
 @media (max-width: 480px) {
   .top {
     padding-top: 20px; /* меньше отступ сверху */
-    gap: 10px;         /* меньше расстояние между элементами */
+    gap: 10px; /* меньше расстояние между элементами */
   }
 
   .tittle {
-    font-size: 28px;   /* меньше заголовок */
+    font-size: 28px; /* меньше заголовок */
     letter-spacing: 2px;
   }
 
   .tochk {
-    font-size: 20px;   /* меньше текст */
-    width: 90%;        /* адаптивная ширина */
+    font-size: 20px; /* меньше текст */
+    width: 90%; /* адаптивная ширина */
   }
 
   .start {
@@ -166,50 +159,49 @@ position: absolute;   /* чтобы позиционировать относи�
   }
 
   .text {
-    font-size: 16px;  /* уменьшаем описание */
-    width: 90%;       /* текст не вылазил за экран */
+    font-size: 16px; /* уменьшаем описание */
+    width: 90%; /* текст не вылазил за экран */
   }
 
   .containerRings {
-    top: 35%;         /* немного сдвинуть вниз */
-    width: 80px;      /* меньше кольца */
+    top: 35%; /* немного сдвинуть вниз */
+    width: 80px; /* меньше кольца */
     height: 80px;
   }
 
   .wave {
-    height: 40px;     /* меньше волна на телефоне */
+    height: 40px; /* меньше волна на телефоне */
   }
 }
 @media (max-width: 480px) {
   .containerRings {
-    top: 10%;          /* чуть ниже, чтобы не перекрывало заголовок */
-    width: 80px;       /* меньше кольца */
+    top: 10%; /* чуть ниже, чтобы не перекрывало заголовок */
+    width: 80px; /* меньше кольца */
     height: 80px;
-    left: 20%;         /* центрируем */
+    left: 20%; /* центрируем */
     transform: translateX(-50%);
   }
-  .containerBokal
-{
-position: absolute;   /* чтобы позиционировать относительно родителя */
-  bottom: 10%;             /* сдвиг вниз от верхнего края блока */
-  right: 0%;            /* центр по горизонтали */
-  transform: translateX(-50%); /* центрирование */
-  width: 70px;       /* меньше кольца */
+  .containerBokal {
+    position: absolute; /* чтобы позиционировать относительно родителя */
+    bottom: 10%; /* сдвиг вниз от верхнего края блока */
+    right: 0%; /* центр по горизонтали */
+    transform: translateX(-50%); /* центрирование */
+    width: 70px; /* меньше кольца */
     height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.containerHeart{
-position: absolute;   /* чтобы позиционировать относительно родителя */
-  top: 17%;             /* сдвиг вниз от верхнего края блока */
-  right: 0%;            /* центр по горизонтали */
-  transform: translateX(-50%); /* центрирование */
-  width: 70px;       /* меньше кольца */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerHeart {
+    position: absolute; /* чтобы позиционировать относительно родителя */
+    top: 17%; /* сдвиг вниз от верхнего края блока */
+    right: 0%; /* центр по горизонтали */
+    transform: translateX(-50%); /* центрирование */
+    width: 70px; /* меньше кольца */
     height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(-50%) rotate(15deg); 
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) rotate(15deg);
+  }
 }
