@@ -92,8 +92,8 @@
 @media (max-width: 480px) {
   .containerPlace {
     padding: 20px 10px; /* немного внутреннего отступа */
-    /* убираем height, чтобы блок растягивался под контент */
-    height: auto;
+
+    min-height: 100%;
   }
 
   .containerText {
@@ -130,7 +130,7 @@
     border-radius: 15px;
   }
   .containerBtn {
-    margin-top: 40px;
+    margin-top: 25px;
     width: 200px;
     height: 40px;
   }
