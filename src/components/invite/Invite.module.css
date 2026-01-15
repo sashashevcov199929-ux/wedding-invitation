@@ -46,8 +46,8 @@
 }
 /* Плавающий квадрат */
 .photoSquare {
-  width: 600px; /* размер квадрата */
-  height: 600x;
+  width: 350px; /* размер квадрата */
+  height: 500x;
   background-color: #fff; /* можно белый фон */
   border-radius: 50px;
   overflow: hidden;
