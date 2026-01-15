@@ -1,31 +1,31 @@
-import styles from './Data.module.css'
-import boryaPhoto from '../../assets/boryaSmall.jpg'
-import alinaPhoto from '../../assets/alina.jpg'
+import styles from "./Data.module.css";
+import boryaPhoto from "../../assets/boryaSmall.jpg";
+import alinaPhoto from "../../assets/alina.jpg";
 
-import React, { forwardRef, useRef, useEffect } from 'react'
-import { motion, useAnimation, useInView } from 'framer-motion'
+import React, { forwardRef, useRef, useEffect } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const Data = forwardRef((_, ref) => {
-  const containerRef = useRef(null)
-  const isInView = useInView(containerRef, { once: true, margin: '-100px' })
-  const controls = useAnimation()
+  const containerRef = useRef(null);
+  const isInView = useInView(containerRef, { once: true, margin: "-100px" });
+  const controls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
-      controls.start('visible')
+      controls.start("visible");
     }
-  }, [isInView, controls])
+  }, [isInView, controls]);
 
   const variants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.6 } }
-}
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.6 } },
+  };
 
   return (
     <motion.div
       ref={(node) => {
-        containerRef.current = node
-        if (ref) ref.current = node
+        containerRef.current = node;
+        if (ref) ref.current = node;
       }}
       initial="hidden"
       animate={controls}
@@ -38,7 +38,11 @@ const Data = forwardRef((_, ref) => {
         animate={controls}
         variants={{
           hidden: { opacity: 0, y: -20 },
-          visible: { opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.6 } }
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.2, duration: 0.6 },
+          },
         }}
         className={styles.tittle}
       >
@@ -51,12 +55,18 @@ const Data = forwardRef((_, ref) => {
         animate={controls}
         variants={{
           hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0, transition: { delay: 0.3, duration: 0.6 } }
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.3, duration: 0.6 },
+          },
         }}
         className={styles.containerFoto}
       >
         <div className={styles.photoColumn}>
-          <span className={styles.quoteTop}>—интересно кто будет <br /> моей женой?</span>
+          <span className={styles.quoteTop}>
+            —интересно кто будет <br /> моей женой?
+          </span>
           <div className={styles.photoWrapper}>
             <img src={boryaPhoto} alt="Боря" className={styles.photo} />
           </div>
@@ -78,7 +88,7 @@ const Data = forwardRef((_, ref) => {
         animate={controls}
         variants={{
           hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { delay: 0.4, duration: 0.6 } }
+          visible: { opacity: 1, transition: { delay: 0.4, duration: 0.6 } },
         }}
         className={styles.avgust}
       >
@@ -91,7 +101,7 @@ const Data = forwardRef((_, ref) => {
         animate={controls}
         variants={{
           hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { delay: 0.5, duration: 0.6 } }
+          visible: { opacity: 1, transition: { delay: 0.5, duration: 0.6 } },
         }}
         className={styles.calendar}
       >

@@ -1,6 +1,6 @@
 .containerData {
   width: 100%;
-  min-height: 90vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,7 +182,7 @@
 }
 @media (max-width: 480px) {
   .tittle {
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 2px; /* чуть меньше */
     padding: 10px; /* меньше отступы сверху/снизу */
     margin-bottom: 8px;
