@@ -193,7 +193,7 @@
   .quoteTop,
   .quoteBottom {
     font-size: 20px;
-    margin-bottom: 4px; /* отступ от фото */
+    margin-bottom: 2px; /* отступ от фото */
   }
 
   .containerFoto {
